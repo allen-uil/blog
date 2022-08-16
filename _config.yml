@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
 title: Eagles UIL Blog
-description: A small blog about all things Academic UIL here at <a href="https://allen-uil.github.io/blog/">Allen</a>
+description: A small blog about all things Academic UIL here at <a href="https://allen-uil.github.io/blog/" style="color:#e0533d">Allen</a>
 baseurl: /blog
