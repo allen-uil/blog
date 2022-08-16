@@ -5,4 +5,6 @@ author: warith
 ---
 
 # I'm really hoping this works
-This could be really cool, especially for updates!
+I've taken like twenty attempts, and I think I finally got it. 
+
+This could be really cool!
