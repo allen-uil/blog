@@ -1,6 +1,8 @@
 # Allen Academic UIL's Blog
 
 Welcome to Allen UIL's Blog, brought to you by Eric Yang and Warith Rahman :D
+
+The main website can be found [here](https://allen-uil.github.io/).
 {% assign posts = site.posts %}
 {%- if posts.size > 0 -%}
 	{%- if page.list_title -%}
