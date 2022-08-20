@@ -3,6 +3,8 @@
 Welcome to Allen UIL's Blog, brought to you by Eric Yang and Warith Rahman :D
 
 The main website can be found [here](https://allen-uil.github.io/).
+
+Both this blog and the main site are managed unofficially by students and not by Allen ISD.
 {% assign posts = site.posts %}
 {%- if posts.size > 0 -%}
 	{%- if page.list_title -%}

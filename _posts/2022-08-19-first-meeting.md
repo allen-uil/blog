@@ -7,7 +7,7 @@ author: warith
 # First UIL Meeting of 2022/23!!
 
 Thanks to everyone for coming to our info meeting! We had a lot of people come today, and we kicked off the year really well thanks to Pratham and Sanjana. 
-UIL Math meetings should be starting as early as next Friday, and it looks like Science meetings will start in September.
+UIL Math meetings should be starting as early as next Friday (08/26), and it looks like Science meetings will start in September (09/07).
 
 If you were unable to come to the meeting, the slides can be found 
 [here](https://docs.google.com/presentation/d/1gn50nAyNOuv7QN7H37PUwdtHwrVdTDOpllJ4zKqz3Q0/edit?usp=sharing). The UIL information form is 
