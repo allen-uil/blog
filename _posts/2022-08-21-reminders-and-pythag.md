@@ -22,7 +22,7 @@ If we divide each side of our original equation by $z^2$, we get the new equatio
 rational pair $(x, y)$ that satisfies a unit circle instead.
 
 ### A Nice Slope Trick
-Say that we pick a point $P = (x_P, y_P)$ on a unit circle, and draw a line with rational slope that goes through $P$ i.e. $y - y_P = \dfrac{m}{n}(x - x_P)$ such 
+Say that we pick a point $P = (x_p, y_p)$ on a unit circle, and draw a line with rational slope that goes through $P$ i.e. $y - y_p = \dfrac{m}{n}(x - x_p)$ such 
 that $\dfrac{m}{n}$ is rational. We can prove that if this hits the unit circle at another point $Q$, its coordinates will **also** be rational!
 
 #### Small Proof
