@@ -57,3 +57,6 @@ Not Pictured:
 	- 3rd Place Current Events Team
 - Zafir Nasim (Class of 2024)
 	- 4th Place Computer Science Team
+
+## 08/23/2022 Edit
+Allen posted a photo with us on their twitter, check [this](https://twitter.com/Allen_ISD/status/1561875380084133890) out!
