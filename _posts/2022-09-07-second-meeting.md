@@ -85,7 +85,9 @@ These two approaches to looking at modular arithmetic can solve many problems.
 Many operations in modular arithmetic work the same as they do in regular arithmetic. For example, you can still add, subtract, and multiply on both sides of equations:
 
 $$ a \equiv b \pmod n \implies a + k \equiv b + k \pmod n $$
+
 $$ a \equiv b \pmod n \implies a - k \equiv b - k \pmod n $$
+
 $$ a \equiv b \pmod n \implies ak \equiv bk \pmod n $$
 
 **VERY IMPORTANT NOTE: THIS DOES NOT APPLY TO DIVISION. DIVISION IS WEIRD IN MODULAR ARITHMETIC.**
@@ -135,8 +137,11 @@ A key thing to note here is that $n \equiv -5 \pmod {n+5}$. (Can you see why thi
 Because of the congruences listed above, we can just substitute the corresponding values in:
 
 $$ \frac{(-5)^2(-4)^2}{4} \equiv 17 \pmod {n+5} $$
+
 $$ \frac{400}{4} \equiv 17 \pmod {n+5} $$
+
 $$ 100 \equiv 17 \pmod {n+5} $$
+
 $$ 83 \equiv 0 \pmod {n+5} $$
 
 So the remainder when $83$ is divided by $n+5$ is $0$. This means $n+5$ is a factor of $83$. The possible values of $n+5$ are $1$ and $83$, but only $83$ yields a positive value of $n$. That positive value is $\boxed{78}$.
@@ -150,6 +155,7 @@ $$ \frac{400}{4} \equiv 17 \pmod {n+5} $$
 Instead of simplifying the left side, which isn't allowed, we can multiply by $4$.
 
 $$ 400 \equiv 68 \pmod {n+5} $$
+
 $$ 332 \equiv 0 \pmod {n+5} $$
 
 Possible values of $n+5$ are $1,83,166,$ and $332.$ This yields $\boxed{78,161,327}$ as solutions.
