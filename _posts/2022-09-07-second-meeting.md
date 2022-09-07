@@ -12,7 +12,7 @@ On September 2, 2022, I (Anthony) delivered a lecture on the basics of number th
 
 Each number has a prime factorization, which is made of a product of powers of primes. For example, the number $60$ has prime factorization
 
-\[ 2^23^15^17^011^013^0\dots \]
+$$ 2^23^15^17^011^013^0\dots $$
 
 Note that any prime not in the prime factorization can be thought to have an exponent of $0$, since any number to the power of $0$ is $1$.
 
@@ -28,7 +28,7 @@ You might say that $5$ numbers contribute to the exponent of $5$ in the prime fa
 
 In general, the exponent of some prime $p$ in the prime factorization of $n!$ is
 
-\[ \left\lfloor\frac{n}{p}\right\rfloor + \left\lfloor\frac{n}{p^2}\right\rfloor + \left\lfloor\frac{n}{p^3}\right\rfloor + \dots \]
+$$ \left\lfloor\frac{n}{p}\right\rfloor + \left\lfloor\frac{n}{p^2}\right\rfloor + \left\lfloor\frac{n}{p^3}\right\rfloor + \dots $$
 
 where the brackets indicate floor division (dividing and throwing away the remainder). More information [here](https://artofproblemsolving.com/wiki/index.php/Legendre%27s_Formula).
 
@@ -70,7 +70,7 @@ You might realize that $10$ hours after midnight, it's 10 o'clock. But $10+12=22
 
 Since the times repeat every $12$ hours, we call this system *mod 12*. In this system, $10, 22$, and $34$ are all the same thing. We use the following notation to denote this:
 
-\[ 10 \equiv 22 \equiv 34 \pmod {12} \]
+$$ 10 \equiv 22 \equiv 34 \pmod {12} $$
 
 The triple line is referred to as *congruence*.
 
@@ -84,15 +84,15 @@ These two approaches to looking at modular arithmetic can solve many problems.
 
 Many operations in modular arithmetic work the same as they do in regular arithmetic. For example, you can still add, subtract, and multiply on both sides of equations:
 
-\[ a \equiv b \pmod n \implies a + k \equiv b + k \pmod n \]
-\[ a \equiv b \pmod n \implies a - k \equiv b - k \pmod n \]
-\[ a \equiv b \pmod n \implies ak \equiv bk \pmod n \]
+$$ a \equiv b \pmod n \implies a + k \equiv b + k \pmod n $$
+$$ a \equiv b \pmod n \implies a - k \equiv b - k \pmod n $$
+$$ a \equiv b \pmod n \implies ak \equiv bk \pmod n $$
 
 **VERY IMPORTANT NOTE: THIS DOES NOT APPLY TO DIVISION. DIVISION IS WEIRD IN MODULAR ARITHMETIC.**
 
 You can also add, subtract, and multiply different equations: (only multiplication is shown, for concision)
 
-\[ a \equiv b \pmod n \qquad \text{and} \qquad c \equiv d \pmod n \implies ac \equiv bd \pmod n \]
+$$ a \equiv b \pmod n \qquad \text{and} \qquad c \equiv d \pmod n \implies ac \equiv bd \pmod n $$
 
 This is extremely useful as it allows us to "mod out" before doing calculations. For example, if I was asked to calculate the remainder when $131\cdot 292$ was divided by $9$, I wouldn't have to multiply it out then calculate the remainder. I could "mod out" by $9$ first by calculating the remainder when $131$ is divided by $9$, then doing the same to $292$, then multiplying those two remainders together to get the answer. (Well, not exactly, but the resulting number is easy to get a remainder out of.)
 
@@ -104,11 +104,11 @@ Let's prove the remainder rule for $9$. If you've done Number Sense, you might r
 
 Consider a number like $5432$. This can be written as
 
-\[ 5\cdot10^3 + 4\cdot10^2 + 3\cdot10^1 + 2\cdot10^0. \]
+$$ 5\cdot10^3 + 4\cdot10^2 + 3\cdot10^1 + 2\cdot10^0. $$
 
 Taking everything mod $9$, we get that
 
-\[ 5\cdot10^3 + 4\cdot10^2 + 3\cdot10^1 + 2\cdot10^0 \equiv 5\cdot1^3 + 4\cdot1^2 + 3\cdot1^1 + 2\cdot1^0 \pmod 9. \]
+$$ 5\cdot10^3 + 4\cdot10^2 + 3\cdot10^1 + 2\cdot10^0 \equiv 5\cdot1^3 + 4\cdot1^2 + 3\cdot1^1 + 2\cdot1^0 \pmod 9. $$
 
 (Keep in mind that exponentiation is just repeated multiplication. This is why I'm able to "mod out" of the bases. Modding out of the exponents is not allowed.)
 
@@ -122,11 +122,11 @@ This is a tricky problem which I got wrong in contest, but I still think it's co
 
 If you've done Number Sense before, you might recall that
 
-\[ 1^3+2^3+3^3+\cdots+n^3 = \frac{n^2(n+1)^2}{4}. \]
+$$ 1^3+2^3+3^3+\cdots+n^3 = \frac{n^2(n+1)^2}{4}. $$
 
 So basically, the problem can be reduced to this: Find all $n$ such that
 
-\[ \frac{n^2(n+1)^2}{4} \equiv 17 \pmod {n+5} \]
+$$ \frac{n^2(n+1)^2}{4} \equiv 17 \pmod {n+5} $$
 
 A key thing to note here is that $n \equiv -5 \pmod {n+5}$. (Can you see why this is true?) Similarly, $n+1 \equiv -4 \pmod {n+5}$.
 
@@ -134,10 +134,10 @@ A key thing to note here is that $n \equiv -5 \pmod {n+5}$. (Can you see why thi
 
 Because of the congruences listed above, we can just substitute the corresponding values in:
 
-\[ \frac{(-5)^2(-4)^2}{4} \equiv 17 \pmod {n+5} \]
-\[ \frac{400}{4} \equiv 17 \pmod {n+5} \]
-\[ 100 \equiv 17 \pmod {n+5} \]
-\[ 83 \equiv 0 \pmod {n+5} \]
+$$ \frac{(-5)^2(-4)^2}{4} \equiv 17 \pmod {n+5} $$
+$$ \frac{400}{4} \equiv 17 \pmod {n+5} $$
+$$ 100 \equiv 17 \pmod {n+5} $$
+$$ 83 \equiv 0 \pmod {n+5} $$
 
 So the remainder when $83$ is divided by $n+5$ is $0$. This means $n+5$ is a factor of $83$. The possible values of $n+5$ are $1$ and $83$, but only $83$ yields a positive value of $n$. That positive value is $\boxed{78}$.
 
@@ -145,12 +145,12 @@ Why is this approach wrong? Well, we can't jump from that second equation to the
 
 ### Wrong Approach 2
 
-\[ \frac{400}{4} \equiv 17 \pmod {n+5} \]
+$$ \frac{400}{4} \equiv 17 \pmod {n+5} $$
 
 Instead of simplifying the left side, which isn't allowed, we can multiply by $4$.
 
-\[ 400 \equiv 68 \pmod {n+5} \]
-\[ 332 \equiv 0 \pmod {n+5} \]
+$$ 400 \equiv 68 \pmod {n+5} $$
+$$ 332 \equiv 0 \pmod {n+5} $$
 
 Possible values of $n+5$ are $1,83,166,$ and $332.$ This yields $\boxed{78,161,327}$ as solutions.
 
@@ -160,17 +160,17 @@ The reason why this is wrong is more subtle than the previous. Remember in Algeb
 
 Let's check if $78$ actually works. $1^3+2^3+3^3+\cdots+78^3$ is equal to
 
-\[ \frac{78\cdot78\cdot79\cdot79}{4} = 39\cdot39\cdot79\cdot79. \]
+$$ \frac{78\cdot78\cdot79\cdot79}{4} = 39\cdot39\cdot79\cdot79. $$
 
 (I'm able to divide here without consequences because we haven't entered the realm of modular arithmetic yet, so division is still allowed.)
 
 Now we can do our modding out:
 
-\[ 39\cdot39\cdot79\cdot79 \equiv 39\cdot39\cdot-4\cdot-4 \pmod {83}. \]
+$$ 39\cdot39\cdot79\cdot79 \equiv 39\cdot39\cdot-4\cdot-4 \pmod {83}. $$
 
 After some multiplication, we get:
 
-\[ (-156)^2 \equiv 10^2 \equiv 17 \pmod {83}, \]
+$$ (-156)^2 \equiv 10^2 \equiv 17 \pmod {83}, $$
 
 so $78$ does actually yield a remainder of $17$.
 
